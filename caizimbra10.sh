@@ -176,7 +176,7 @@ zimbraMailProxy="FALSE"
 
 #zimbraMtaMyNetworks="127.0.0.0/8 $CONTAINERIP/32 [::1]/128 [fe80::]/64"
 zimbraMtaMyNetworks="127.0.0.0/8 $IP/32 [::1]/128 [fe80::]/64"
-zimbraPrefTimeZoneId="Asia/Barnaul"
+zimbraPrefTimeZoneId="Bangkok/Hanoi/Jakarta"
 zimbraReverseProxyLookupTarget="TRUE"
 zimbraVersionCheckInterval="1d"
 zimbraVersionCheckNotificationEmail="admin@$DOMAIN"
