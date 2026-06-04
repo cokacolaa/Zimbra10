@@ -8,5 +8,5 @@ URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 count=$(/opt/zimbra/libexec/zmqstat |grep -i deferred |cut -d "=" -f2)
 
 if [ "$count" -ge "50" ];then
-curl -s -X POST $URL -d chat_id=$CHAT_ID -d text="[WARNING QUEUE ], Mail queue $IP $(hostname -a).$(hostname -d)  la '$count' ,Hay xu ly!!!"
+curl -s -X POST $URL -d chat_id=$CHAT_ID -d text="⚠️ WARNING: Mail queue threshold exceeded on $IP ($(hostname -a).$(hostname -d)). Current deferred queue: '$count' messages. Please investigate immediately."
 fi
